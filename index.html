@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>QN.1 to QN.4 please checkout in the console</h4>
+    <script>
+
+        //a check function to check number.
+        function check(num){
+            if(num<0){
+                console.log("number is negative")
+            }else{
+                console.log("number is positive")
+            }
+        }
+        check(9);
+
+        //an arrow head function to check largest number.
+        largest = () => Math.max(1,2,3,10,9,5,6)
+        console.log("the largest number in the array is " + largest());
+
+        //find the area of cylinder using JS object
+        var obj = {
+            radius: 3,
+            height: 5,
+            area: function(){
+               return 3.14 * this.radius ** 2 * this.height
+            }
+        }
+        console.log(obj.radius)
+        console.log(obj.height)
+        console.log("area of cylinder is "+ obj.area())
+
+        //output of the given code describing in JS engine
+        //QN.4 code description
+
+        var temp = 'hi' 
+        
+        function display(){
+            console.log(temp);
+        }
+        display();
+        //it gives output 'hi'
+
+        function display(){
+            console.log(temp);
+            var temp = 'bye'
+        }
+        display();
+        //it gives undefined
+    </script>
+</body>
+</html>
